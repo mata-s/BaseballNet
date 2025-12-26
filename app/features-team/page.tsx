@@ -6,6 +6,7 @@ import { useEffect, useState } from "react";
 export default function FeaturesTeamPage() {
   const [showAllImages, setShowAllImages] = useState(false);
   const [showTopButton, setShowTopButton] = useState(false);
+  const [tocOpen, setTocOpen] = useState(false);
 
   useEffect(() => {
     const onScroll = () => setShowTopButton(window.scrollY > 300);
@@ -25,53 +26,90 @@ export default function FeaturesTeamPage() {
       <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
         ゴールド：一部機能が利用可能 ／ プラチナ：すべての機能が利用可能
       </p>
+
       <nav className="mt-8 rounded-xl border border-zinc-200 bg-zinc-50 p-4 text-sm dark:border-zinc-800 dark:bg-zinc-900/40">
-        <p className="mb-2 font-semibold text-zinc-900 dark:text-zinc-100">
-          目次
-        </p>
-        <ul className="list-disc space-y-1 pl-5 text-zinc-700 dark:text-zinc-200">
-          <li>
-            <a href="#team-performance" className="underline-offset-2 hover:underline">
-              チーム成績を、さまざまな切り口で振り返る
-            </a>
-          </li>
-          <li>
-            <a href="#team-details" className="underline-offset-2 hover:underline">
-              グラフで「チーム詳細成績」を見やすくチェック（※ゴールド以上）
-            </a>
-          </li>
-          <li>
-            <a href="#team-goals" className="underline-offset-2 hover:underline">
-              目標を立てて、チームの成績アップを目指せる（※ゴールド以上）
-            </a>
-          </li>
-          <li>
-            <a href="#team-match-review" className="underline-offset-2 hover:underline">
-                相手別・球場別で試合を振り返れる（※ゴールド以上）
-            </a>
-          </li>
-          <li>
-            <a href="#team-member-ranking" className="underline-offset-2 hover:underline">
-              チーム内ランキングで、チーム内の順位や成績をチェック（※ゴールド以上）
-            </a>
-          </li>
-          <li>
-            <a href="#team-ranking" className="underline-offset-2 hover:underline">
-              チームランキングで、県内のライバルと競い合える（※プラチナ限定）
-            </a>
-          </li>
-          <li>
-            <a href="#mvp" className="underline-offset-2 hover:underline">
-                MVP投票で、月間・年間のMVPを決められる（※プラチナ限定）
-            </a>
-          </li>
-          <li>
-            <a href="#team-schedule" className="underline-offset-2 hover:underline">
-              チームのスケジュールを管理して、スタンプやコメントで反応できる
-            </a>
-          </li>
-        </ul>
-      </nav>
+  <div className="flex items-center justify-between">
+    <p className="font-semibold text-zinc-900 dark:text-zinc-100">目次</p>
+
+    {/* SP: 開閉ボタン */}
+    <button
+      type="button"
+      onClick={() => setTocOpen((v) => !v)}
+      className="inline-flex items-center gap-2 rounded-lg border border-zinc-200 bg-white px-3 py-1.5 text-xs font-medium text-zinc-700 shadow-sm hover:bg-zinc-50 active:scale-[0.99] dark:border-zinc-800 dark:bg-zinc-950 dark:text-zinc-200 dark:hover:bg-zinc-900 md:hidden"
+      aria-expanded={tocOpen}
+      aria-controls="toc-list-team"
+    >
+      {tocOpen ? "閉じる" : "開く"}
+      <span
+        className={`text-base leading-none transition-transform ${
+          tocOpen ? "rotate-180" : "rotate-0"
+        }`}
+        aria-hidden="true"
+      >
+        ▾
+      </span>
+    </button>
+  </div>
+
+  {/* SP: 閉じている時はヒント表示 */}
+  {!tocOpen && (
+    <p className="mt-2 text-xs text-zinc-600 dark:text-zinc-400 md:hidden">
+      タップして、読みたい項目へジャンプできます
+    </p>
+  )}
+
+  <ul
+    id="toc-list-team"
+    className={`mt-3 list-disc space-y-1 pl-5 text-zinc-700 dark:text-zinc-200 md:mt-2 md:block ${
+      tocOpen ? "block" : "hidden"
+    }`}
+  >
+    <li>
+      <a href="#team-performance" className="underline-offset-2 hover:underline">
+        チーム成績を、さまざまな切り口で振り返る
+      </a>
+    </li>
+    <li>
+      <a href="#team-details" className="underline-offset-2 hover:underline">
+        グラフで「チーム詳細成績」を見やすくチェック（※ゴールド以上）
+      </a>
+    </li>
+    <li>
+      <a href="#team-goals" className="underline-offset-2 hover:underline">
+        目標を立てて、チームの成績アップを目指せる（※ゴールド以上）
+      </a>
+    </li>
+    <li>
+      <a href="#team-match-review" className="underline-offset-2 hover:underline">
+        相手別・球場別で試合を振り返れる（※ゴールド以上）
+      </a>
+    </li>
+    <li>
+      <a
+        href="#team-member-ranking"
+        className="underline-offset-2 hover:underline"
+      >
+        チーム内ランキングで、チーム内の順位や成績をチェック（※ゴールド以上）
+      </a>
+    </li>
+    <li>
+      <a href="#team-ranking" className="underline-offset-2 hover:underline">
+        チームランキングで、県内のライバルと競い合える（※プラチナ限定）
+      </a>
+    </li>
+    <li>
+      <a href="#mvp" className="underline-offset-2 hover:underline">
+        MVP投票で、月間・年間のMVPを決められる（※プラチナ限定）
+      </a>
+    </li>
+    <li>
+      <a href="#team-schedule" className="underline-offset-2 hover:underline">
+        チームのスケジュールを管理して、スタンプやコメントで反応できる
+      </a>
+    </li>
+  </ul>
+</nav>
+
       <section id="team-performance" className="mt-8 space-y-6">
         <h1 className="text-2xl font-bold text-zinc-900 dark:text-zinc-50">
           チーム成績を、さまざまな切り口で振り返る

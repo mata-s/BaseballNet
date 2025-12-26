@@ -90,7 +90,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
         {/* メインエリア */}
         <div className="flex min-h-screen flex-1 flex-col">
           {/* モバイル用ヘッダー */}
-          <header className="flex items-center justify-between border-b border-zinc-200 bg-white px-4 py-3 dark:border-zinc-800 dark:bg-zinc-950 md:hidden">
+          <header className="fixed left-0 right-0 top-0 z-50 flex items-center justify-between border-b border-zinc-200 bg-white px-4 py-3 dark:border-zinc-800 dark:bg-zinc-950 md:hidden">
             <Link href="/" className="flex items-center gap-2">
               <img
                 src="/icon.png"
@@ -116,7 +116,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
 
           {/* モバイル用ドロワーメニュー */}
           {menuOpen && (
-            <div className="relative z-40 md:hidden">
+            <div className="relative z-60 md:hidden">
               {/* 背景の半透明レイヤー */}
               <button
                 type="button"
@@ -158,7 +158,7 @@ export function Shell({ children }: { children: React.ReactNode }) {
           )}
 
           {/* ページ本体 */}
-          <main className="flex-1 px-4 py-6 md:px-8 md:py-10">
+          <main className="flex-1 px-4 pb-6 pt-20 md:px-8 md:py-10">
             {children}
           </main>
         </div>
