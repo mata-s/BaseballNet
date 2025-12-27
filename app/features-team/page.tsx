@@ -419,7 +419,7 @@ export default function FeaturesTeamPage() {
         <div className="grid gap-4 sm:grid-cols-2">
           <figure className="mx-auto w-full max-w-xs overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 text-center text-xs text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300">
             <Image
-              src="/screenshots/features-team/チーム内ランキングカテゴリー.png"
+              src="/screenshots/features-team/team-member-ranking-category.png"
               alt="チーム内ランキング（カテゴリ切り替え）の画面"
               width={1200}
               height={2600}
@@ -432,7 +432,7 @@ export default function FeaturesTeamPage() {
 
           <figure className="mx-auto w-full max-w-xs overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 text-center text-xs text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300">
             <Image
-              src="/screenshots/features-team/チーム内ランキング.png"
+              src="/screenshots/features-team/team-member-ranking.png"
               alt="チーム内ランキング（一覧）の画面"
               width={1200}
               height={2600}
@@ -488,7 +488,7 @@ export default function FeaturesTeamPage() {
 
         <figure className="mx-auto max-w-xs overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 text-center text-xs text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300">
           <Image
-            src="/screenshots/features-team/チームランキング.png"
+            src="/screenshots/features-team/team-ranking.png"
             alt="チームランキングの画面"
             width={1200}
             height={2600}
@@ -576,7 +576,7 @@ export default function FeaturesTeamPage() {
         <div className="grid gap-4 sm:grid-cols-2">
           <figure className="mx-auto w-full max-w-xs overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 text-center text-xs text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300">
             <Image
-              src="/screenshots/features-team/スケジュール.png"
+              src="/screenshots/features-team/team-schedule.png"
               alt="チームスケジュールの一覧画面"
               width={1200}
               height={2600}
@@ -589,7 +589,7 @@ export default function FeaturesTeamPage() {
 
           <figure className="mx-auto w-full max-w-xs overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 text-center text-xs text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300">
             <Image
-              src="/screenshots/features-team/スケジュール詳細.png"
+              src="/screenshots/features-team/team-schedule2.png"
               alt="スケジュール詳細（スタンプやコメントで反応）の画面"
               width={1200}
               height={2600}

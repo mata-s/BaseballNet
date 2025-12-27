@@ -440,7 +440,7 @@ export default function FeaturesPage() {
 
         <figure className="mx-auto max-w-xs overflow-hidden rounded-xl border border-zinc-200 bg-zinc-50 text-center text-xs text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300">
           <Image
-            src="/screenshots/features/バッティングランキング.png"
+            src="/screenshots/features/batting-ranking.png"
             alt="個人ランキング（打者ランキング）の画面"
             width={1200}
             height={2600}
