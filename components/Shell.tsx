@@ -17,6 +17,7 @@ const navItems: NavItem[] = [
   { href: "/team-rules", label: "チームランキングのルール" },
   { href: "/calculations", label: "成績の計算方法" },
   { href: "/team-calculations", label: "チーム成績の計算方法" },
+  { href: "/director-manager", label: "采配と管理を支える、監督・マネージャー向け機能" },
   { href: "/faq", label: "FAQ" },
   { href: "/terms", label: "利用規約" },
   { href: "/privacy", label: "プライバシーポリシー" },

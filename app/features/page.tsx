@@ -502,8 +502,8 @@ export default function FeaturesPage() {
             このページでは、表示を切り替えることで全国のトップ選手も確認できます。
           </p>
           <ul className="list-disc space-y-1 pl-5">
-            <li>打者：全国のヒット数トップ（1位）</li>
-            <li>投手：全国の成績トップ（1位）</li>
+            <li>打者：全国の各ランキングのトップ（1位）</li>
+            <li>投手：全国の各ランキングのトップ（1位）</li>
           </ul>
           <p className="text-xs sm:text-sm leading-relaxed">
             目標の指標を決めて上位を目指したり、強い県・強い選手の成績を参考にしたりと、モチベーションにもつながります。
