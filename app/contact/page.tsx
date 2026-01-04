@@ -101,6 +101,11 @@ export default function ContactPage() {
               宛にご連絡ください。
             </p>
 
+            <p className="text-sm text-zinc-700 dark:text-zinc-200">
+              ※ 本フォームでは、<span className="font-semibold">アカウント削除および関連データの削除依頼</span>も受け付けています。
+              アプリにログインできない場合や、アプリを削除済みの場合でも、こちらからご連絡ください。
+            </p>
+
             <p className="text-xs text-zinc-500 dark:text-zinc-400">
               ※原則として、1〜3営業日以内の返信を目安に対応します。内容によってはお時間をいただく場合があります。
             </p>
