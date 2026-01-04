@@ -216,9 +216,6 @@ export default function Home() {
             <div className="rounded-2xl border border-zinc-200 bg-white p-5 text-sm dark:border-zinc-800 dark:bg-zinc-950">
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <p className="text-xs font-semibold text-amber-600 dark:text-amber-300">
-                    初月無料
-                  </p>
                   <p className="mt-1 text-base font-semibold">ゴールドプラン（月額）</p>
                 </div>
                 <div className="text-right">
@@ -228,13 +225,13 @@ export default function Home() {
               </div>
 
               <ul className="mt-4 list-disc space-y-1 pl-5 text-xs text-zinc-600 dark:text-zinc-400">
-                <li>初回1ヶ月無料</li>
-                <li>2ヶ月目から自動更新</li>
+                <li>毎月自動更新</li>
                 <li>いつでもキャンセル可能</li>
+                <li>解約しても、利用期間終了までは利用できます</li>
               </ul>
 
               <p className="mt-4 text-xs text-zinc-500 dark:text-zinc-400">
-                ※ 価格・無料期間はアプリ内表示に準拠します。
+                ※ 価格はアプリ内表示に準拠します。
               </p>
             </div>
 
@@ -268,9 +265,6 @@ export default function Home() {
             <div className="rounded-2xl border border-zinc-200 bg-white p-5 text-sm dark:border-zinc-800 dark:bg-zinc-950">
               <div className="flex items-start justify-between gap-3">
                 <div>
-                  <p className="text-xs font-semibold text-zinc-700 dark:text-zinc-200">
-                    初月無料
-                  </p>
                   <p className="mt-1 text-base font-semibold">プラチナプラン（月額）</p>
                 </div>
                 <div className="text-right">
@@ -280,13 +274,13 @@ export default function Home() {
               </div>
 
               <ul className="mt-4 list-disc space-y-1 pl-5 text-xs text-zinc-600 dark:text-zinc-400">
-                <li>初回1ヶ月無料</li>
-                <li>2ヶ月目から自動更新</li>
+                <li>毎月自動更新</li>
                 <li>いつでもキャンセル可能</li>
+                <li>解約しても、利用期間終了までは利用できます</li>
               </ul>
 
               <p className="mt-4 text-xs text-zinc-500 dark:text-zinc-400">
-                ※ 価格・無料期間はアプリ内表示に準拠します。
+                ※ 価格はアプリ内表示に準拠します。
               </p>
             </div>
 
