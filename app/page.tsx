@@ -24,18 +24,53 @@ export default function Home() {
               目標づくりや練習のヒントにもつながります。県内・年齢別のランキングで近い相手と比べながら、野球をもう一段楽しく。
             </p>
 
-            {/* CTA ボタン */}
-            <div className="mt-6 flex flex-col gap-3 sm:flex-row sm:items-center">
-              <span
-                className="flex cursor-not-allowed items-center justify-center rounded-full bg-zinc-300 px-6 py-3 text-sm font-semibold text-zinc-600 shadow-sm dark:bg-zinc-700 dark:text-zinc-300"
-              >
-                準備中
-              </span>
-            </div>
+            {/* CTA ボタン（ストアバッジ・準備中） */}
+            <div className="mt-6">
+              <p className="text-xs font-medium text-zinc-700 dark:text-zinc-200">
+                iOS / Android 近日公開（審査中）
+              </p>
 
-            <p className="mt-3 text-xs text-zinc-500 dark:text-zinc-400">
-              ※ アプリ内の「設定 &gt; サポート」からも、このページを開くことができます。
-            </p>
+              {/* SP: 縦並び / sm〜: 横並び */}
+              <div className="mt-3 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
+                {/* App Store */}
+                <div
+                  className="flex items-center gap-3 opacity-70 cursor-not-allowed select-none"
+                  aria-disabled="true"
+                >
+                  <Image
+                    src="/badges/app-store-badge.svg"
+                    alt="App Store（準備中）"
+                    width={160}
+                    height={48}
+                    priority
+                  />
+                  <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                    App Store（準備中）
+                  </span>
+                </div>
+
+                {/* Google Play */}
+                <div
+                  className="flex items-center gap-3 opacity-70 cursor-not-allowed select-none"
+                  aria-disabled="true"
+                >
+                  <Image
+                    src="/badges/google-play-badge.svg"
+                    alt="Google Play（準備中）"
+                    width={160}
+                    height={48}
+                    priority
+                  />
+                  <span className="text-xs text-zinc-500 dark:text-zinc-400">
+                    Google Play（準備中）
+                  </span>
+                </div>
+              </div>
+
+              <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
+                ※ 公開後、このページからストアへ移動できます。
+              </p>
+            </div>
           </div>
         </section>
 
@@ -199,6 +234,17 @@ export default function Home() {
             <p className="mt-4 text-xs text-zinc-500 dark:text-zinc-400">
               ※ 機能や提供範囲はアップデートにより変更される場合があります。
             </p>
+
+            <div className="mt-4 rounded-xl border border-zinc-200 bg-zinc-50 p-4 text-xs leading-relaxed text-zinc-600 dark:border-zinc-800 dark:bg-zinc-900/40 dark:text-zinc-300">
+              <p className="font-semibold text-zinc-800 dark:text-zinc-100">※ランキングの表示／更新について</p>
+              <p className="mt-1">
+                ランキングは月単位で集計し、翌月1日 1:30頃に更新されます。
+                プレミアムを更新前に解約した場合、当月分のランキングが表示されないことがあります。
+              </p>
+              <p className="mt-1 text-[11px] text-zinc-500 dark:text-zinc-400">
+                （ランキング表示は、更新時点でのプレミアム有効状態に基づきます）
+              </p>
+            </div>
           </div>
         </section>
 
