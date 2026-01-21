@@ -27,27 +27,26 @@ export default function Home() {
             {/* CTA ボタン（ストアバッジ・準備中） */}
             <div className="mt-6">
               <p className="text-xs font-medium text-zinc-700 dark:text-zinc-200">
-                iOS / Android 近日公開（審査中）
+                iOS版 公開中 / Android版 近日公開（審査中）
               </p>
 
               {/* SP: 縦並び / sm〜: 横並び */}
               <div className="mt-3 flex flex-col items-start gap-3 sm:flex-row sm:items-center">
-                {/* App Store */}
-                <div
-                  className="flex items-center gap-3 opacity-70 cursor-not-allowed select-none"
-                  aria-disabled="true"
+            {/* App Store */}
+                <a
+                  href="https://apps.apple.com/app/%E3%83%99%E3%83%BC%E3%82%B9%E3%83%9C%E3%83%BC%E3%83%AB%E3%83%8D%E3%83%83%E3%83%88/id6743166887"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 hover:opacity-90 transition-opacity"
                 >
                   <Image
                     src="/badges/app-store-badge.svg"
-                    alt="App Store（準備中）"
+                    alt="App Store でダウンロード"
                     width={160}
                     height={48}
                     priority
                   />
-                  <span className="text-xs text-zinc-500 dark:text-zinc-400">
-                    App Store（準備中）
-                  </span>
-                </div>
+                </a>
 
                 {/* Google Play */}
                 <div
@@ -66,10 +65,6 @@ export default function Home() {
                   </span>
                 </div>
               </div>
-
-              <p className="mt-2 text-xs text-zinc-500 dark:text-zinc-400">
-                ※ 公開後、このページからストアへ移動できます。
-              </p>
             </div>
           </div>
         </section>
