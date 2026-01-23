@@ -27,7 +27,7 @@ export default function Home() {
             {/* CTA ボタン（ストアバッジ・準備中） */}
             <div className="mt-6">
               <p className="text-xs font-medium text-zinc-700 dark:text-zinc-200">
-                iOS版 公開中 / Android版 近日公開（審査中）
+                iOS版 公開中 / Android版 近日公開
               </p>
 
               {/* SP: 縦並び / sm〜: 横並び */}
