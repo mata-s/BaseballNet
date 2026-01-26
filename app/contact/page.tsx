@@ -9,7 +9,7 @@ type Category =
   | "データ削除・アカウント"
   | "その他";
 
-const SUPPORT_EMAIL = "splingnew@gmail.com";
+const SUPPORT_EMAIL = "support@baseball-net.jp";
 
 export default function ContactPage() {
   const [name, setName] = useState("");
