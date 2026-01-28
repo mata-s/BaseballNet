@@ -6,70 +6,88 @@ export default function Home() {
       <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col px-4 py-10 sm:px-8 lg:px-12">
 
         {/* キャンペーン告知 */}
-        {/* <section className="mt-2 rounded-xl border border-amber-200 bg-amber-50 px-4 py-3 text-xs text-amber-900 sm:text-sm dark:border-amber-400/40 dark:bg-amber-900/20 dark:text-amber-100">
-          <p className="font-semibold">【リリース記念】8月末まで無料</p>
-          <p className="mt-1">
-            登録したチーム名、または個人名を
-            <span className="font-medium">（後日掲載予定の連絡先）</span>
-            に送っていただくと、8月末まで有料機能を無料でご利用いただけます。
-          </p>
-          <p className="mt-1">
-            チーム名でお申し込みの場合は、事前にメンバー全員がアプリ内で同じチームに加入している状態にしてください。
-          </p>
-          <p className="mt-1">
-            条件を満たすと、個人プラン・チームプランの両方が8月末まで無料になります。
-          </p>
-          <p className="mt-2 text-xs text-zinc-500">
-            ※ Android（Google Play）は現在準備中です。<br />
-            メールアドレスを教えていただければ、先行してご利用いただけます。
-          </p>
-          <p className="mt-3 text-xs font-semibold text-amber-900 sm:text-sm dark:text-amber-100">
-            ↓ここにご連絡ください
-          </p>
-          <div className="mt-1 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
-            <p className="text-xs sm:text-sm">
-              メール:{" "}
-              <a
-                href="mailto:support@baseball-net.jp"
-                className="underline underline-offset-2 decoration-amber-500/80 hover:decoration-amber-600"
-              >
-                support@baseball-net.jp
-              </a>
-            </p>
+        <section className="mt-2 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-xs text-amber-900 shadow-sm sm:text-sm dark:border-amber-400/40 dark:bg-amber-900/25 dark:text-amber-50">
+          <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
+            <div className="flex-1">
+              <p className="inline-flex items-center gap-1 rounded-full bg-white/70 px-3 py-1 text-[11px] font-semibold text-amber-800 ring-1 ring-amber-200 sm:text-xs dark:bg-amber-900/60 dark:text-amber-50 dark:ring-amber-500/60">
+                🎁 リリース記念キャンペーン
+              </p>
+              <p className="mt-2 text-sm font-bold sm:text-base">
+                いま登録すると、<span className="underline underline-offset-2 decoration-amber-500">8月末まで有料機能がぜんぶ無料</span>
+              </p>
+              <p className="mt-1">
+                登録したチーム名、または個人名を
+                <span className="font-medium"> 下のいずれかの連絡先 </span>
+                に送っていただくと、8月末までプレミアム（個人プラン）とチームプランの対象機能を無料でご利用いただけます。
+              </p>
+              <p className="mt-1">
+                チーム名でお申し込みの場合は、事前にメンバー全員がアプリ内で同じチームに加入している状態にしてください。
+              </p>
+              <p className="mt-1">
+                「無料なら一度試してみたい」「チームで使えるか確認してみたい」という方に向けた期間限定キャンペーンです。
+              </p>
+              <p className="mt-2 text-[11px] text-amber-800/80 dark:text-amber-100/80">
+                ※ 無料期間終了後に自動で有料プランに切り替わることはありません。<br />
+                ※ 継続利用を希望される場合は、アプリ内からあらためてご購入いただく形になります。
+              </p>
+              <p className="mt-2 text-[11px] text-zinc-600 sm:text-xs dark:text-zinc-300">
+                ※ Android（Google Play）は現在準備中です。メールアドレスを教えていただければ、先行してご利用いただけます。
+              </p>
+              <p className="mt-3 text-xs font-semibold text-amber-900 sm:text-sm dark:text-amber-50">
+                ↓ 参加希望の方は、こちらからご連絡ください
+              </p>
+              <div className="mt-1 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
+                <p className="text-xs sm:text-sm">
+                  メール:{" "}
+                  <a
+                    href="mailto:support@baseball-net.jp"
+                    className="underline underline-offset-2 decoration-amber-500/80 hover:decoration-amber-600"
+                  >
+                    support@baseball-net.jp
+                  </a>
+                </p>
 
-            <div className="flex items-center gap-3">
-              <div
-                className="flex cursor-pointer items-center gap-1 opacity-70"
-                title="X（準備中）"
-              >
-                <Image
-                  src="/badges/x-logo.png"
-                  alt="X"
-                  width={28}
-                  height={28}
-                />
-                <span className="text-[11px] sm:text-xs text-amber-800/80 dark:text-amber-100/80">
-                  準備中
-                </span>
-              </div>
+                <div className="flex items-center gap-3">
+                  <a
+                    href="https://x.com/b_net2026?s=21"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 hover:opacity-90"
+                    title="公式X（B-Net）"
+                  >
+                    <Image
+                      src="/badges/x-logo.png"
+                      alt="X"
+                      width={28}
+                      height={28}
+                    />
+                    <span className="text-[11px] sm:text-xs text-amber-800/80 dark:text-amber-100/80">
+                      X（@b_net2026）
+                    </span>
+                  </a>
 
-              <div
-                className="flex cursor-pointer items-center gap-1 opacity-70"
-                title="Instagram（準備中）"
-              >
-                <Image
-                  src="/badges/Instagram_Glyph_Gradient.svg"
-                  alt="Instagram"
-                  width={28}
-                  height={28}
-                />
-                <span className="text-[11px] sm:text-xs text-amber-800/80 dark:text-amber-100/80">
-                  準備中
-                </span>
+                  <a
+                    href="https://www.instagram.com/b_net2026?igsh=YzNnZzl1ZTcybDFl&utm_source=qr"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="flex items-center gap-1 hover:opacity-90"
+                    title="公式Instagram（B-Net）"
+                  >
+                    <Image
+                      src="/badges/Instagram_Glyph_Gradient.svg"
+                      alt="Instagram"
+                      width={28}
+                      height={28}
+                    />
+                    <span className="text-[11px] sm:text-xs text-amber-800/80 dark:text-amber-100/80">
+                      Instagram（@b_net2026）
+                    </span>
+                  </a>
+                </div>
               </div>
             </div>
           </div>
-        </section> */}
+        </section>
 
         {/* Hero セクション */}
         <section className="mt-6 flex flex-1 flex-col gap-8 sm:mt-8 md:mt-20 md:flex-row md:items-center">
