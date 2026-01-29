@@ -6,7 +6,7 @@ export default function Home() {
       <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col px-4 py-10 sm:px-8 lg:px-12">
 
         {/* キャンペーン告知 */}
-        <section className="mt-2 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-xs text-amber-900 shadow-sm sm:text-sm dark:border-amber-400/40 dark:bg-amber-900/25 dark:text-amber-50">
+        <section className="mt-2 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-[13px] font-medium text-amber-900 shadow-sm sm:text-sm dark:border-amber-400/40 dark:bg-amber-900/25 dark:text-amber-50">
           <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
             <div className="flex-1">
               <p className="inline-flex items-center gap-1 rounded-full bg-white/70 px-3 py-1 text-[11px] font-semibold text-amber-800 ring-1 ring-amber-200 sm:text-xs dark:bg-amber-900/60 dark:text-amber-50 dark:ring-amber-500/60">
@@ -26,11 +26,11 @@ export default function Home() {
               <p className="mt-1">
                 「無料なら一度試してみたい」「チームで使えるか確認してみたい」という方に向けた期間限定キャンペーンです。
               </p>
-              <p className="mt-2 text-[11px] text-amber-800/80 dark:text-amber-100/80">
+              <p className="mt-2 text-[11px] font-normal text-amber-800/80 dark:text-amber-100/80">
                 ※ 無料期間終了後に自動で有料プランに切り替わることはありません。<br />
                 ※ 継続利用を希望される場合は、アプリ内からあらためてご購入いただく形になります。
               </p>
-              <p className="mt-2 text-[11px] text-zinc-600 sm:text-xs dark:text-zinc-300">
+              <p className="mt-2 text-[11px] font-normal text-zinc-600 sm:text-xs dark:text-zinc-300">
                 ※ Android（Google Play）は現在準備中です。メールアドレスを教えていただければ、先行してご利用いただけます。
               </p>
               <p className="mt-3 text-xs font-semibold text-amber-900 sm:text-sm dark:text-amber-50">
