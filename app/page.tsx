@@ -13,7 +13,7 @@ export default function Home() {
                 🎁 リリース記念キャンペーン
               </p>
               <p className="mt-2 text-sm font-bold sm:text-base">
-                いま登録すると、<span className="underline underline-offset-2 decoration-amber-500">8月末まで有料機能がぜんぶ無料</span>
+                いま登録すると、<span className="underline underline-offset-2 decoration-amber-500">8月末まで有料機能がぜんぶ無料!!</span>
               </p>
               <p className="mt-1">
                 登録したチーム名、または個人名を
