@@ -12,30 +12,13 @@ export default function Home() {
               <p className="inline-flex items-center gap-1 rounded-full bg-white/70 px-3 py-1 text-[11px] font-semibold text-amber-800 ring-1 ring-amber-200 sm:text-xs dark:bg-amber-900/60 dark:text-amber-50 dark:ring-amber-500/60">
                 🎁 リリース記念キャンペーン
               </p>
-              <p className="mt-2 text-sm font-bold sm:text-base">
-                いま登録すると、<span className="underline underline-offset-2 decoration-amber-500">8月末まで有料機能がぜんぶ無料！！</span>
+              <p className="mt-2 text-[13.5px] font-bold sm:text-base">
+                今登録すると、<span className="underline underline-offset-2 decoration-amber-500">8月末まで有料機能が全部無料！！</span>
               </p>
               <p className="mt-1">
-                現在、ベースボールネットの有料機能を
-                <span className="font-medium"> 8月末まで無料開放 </span>
-                しています。プレミアム（個人プラン）とチームプランの対象機能を、
-                <span className="font-medium">お申し込みいただいた方から順次</span>
-                ご利用いただけるように設定しています。
-              </p>
-              <p className="mt-1">
-                無料期間の適用漏れを防ぐため、
-                <span className="font-medium"> 確実に対象にしたい方 </span>
-                は、登録しているチーム名または個人名を
-                <span className="font-medium"> 下のいずれかの連絡先 </span>
-                までお送りください。
-              </p>
-              <p className="mt-1 text-[11px] font-normal text-amber-800/80 dark:text-amber-100/80">
-                お申し込み内容は順次反映しているため、
-                <span className="font-medium">反映まで数時間〜1日ほどかかる場合があります。</span>
-                あらかじめご了承ください。
-              </p>
-              <p className="mt-1">
-                チーム名でお申し込みの場合は、事前にメンバー全員がアプリ内で同じチームに加入している状態にしていただけるとスムーズです。
+                現在、ベースボールネットの
+                <span className="font-medium">個人プラン・チームプランの有料機能を8月末まで無料開放</span>
+                しています。アプリに登録されている方から順次ご利用いただけるようになります。
               </p>
               <p className="mt-1">
                 この機会に「無料なら一度試してみたい」「チームで使えるか確認してみたい」という方に向けた期間限定キャンペーンです。
@@ -44,11 +27,16 @@ export default function Home() {
                 ※ 無料期間終了後に自動で有料プランに切り替わることはありません。<br />
                 ※ 継続利用を希望される場合は、アプリ内からあらためてご購入いただく形になります。
               </p>
+              <p className="mt-1 text-[11px] font-normal text-amber-800/80 dark:text-amber-100/80">
+                ※ 無料開放の反映は順次行っているため、
+                <span className="font-medium">登録から反映まで数時間〜1日ほどかかる場合があります。</span>
+                あらかじめご了承ください。
+              </p>
               <p className="mt-2 text-[11px] font-normal text-zinc-600 sm:text-xs dark:text-zinc-300">
-                ※ Android（Google Play）は現在準備中です。メールアドレスを教えていただければ、先行してご利用いただけます。
+                ※ Android（Google Play）は現在準備中です。メールアドレスを教えていただければ先行してご利用いただけます。
               </p>
               <p className="mt-3 text-xs font-semibold text-amber-900 sm:text-sm dark:text-amber-50">
-                ↓ 参加希望の方は、こちらからご連絡ください
+                ↓ キャンペーンに関するご質問やお問い合わせはこちら
               </p>
               <div className="mt-1 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
                 <p className="text-xs sm:text-sm">
