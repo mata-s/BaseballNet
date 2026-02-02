@@ -18,7 +18,9 @@ export default function Home() {
               <p className="mt-1">
                 現在、ベースボールネットの有料機能を
                 <span className="font-medium"> 8月末まで無料開放 </span>
-                しています。プレミアム（個人プラン）とチームプランの対象機能を、そのままお試しいただけます。
+                しています。プレミアム（個人プラン）とチームプランの対象機能を、
+                <span className="font-medium">お申し込みいただいた方から順次</span>
+                ご利用いただけるように設定しています。
               </p>
               <p className="mt-1">
                 無料期間の適用漏れを防ぐため、
@@ -26,6 +28,11 @@ export default function Home() {
                 は、登録しているチーム名または個人名を
                 <span className="font-medium"> 下のいずれかの連絡先 </span>
                 までお送りください。
+              </p>
+              <p className="mt-1 text-[11px] font-normal text-amber-800/80 dark:text-amber-100/80">
+                お申し込み内容は順次反映しているため、
+                <span className="font-medium">反映まで数時間〜1日ほどかかる場合があります。</span>
+                あらかじめご了承ください。
               </p>
               <p className="mt-1">
                 チーム名でお申し込みの場合は、事前にメンバー全員がアプリ内で同じチームに加入している状態にしていただけるとスムーズです。
