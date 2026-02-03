@@ -106,7 +106,7 @@ export default function TeamRulesPage() {
           <ul className="list-disc space-y-1 pl-5">
   <li>
     <strong>月間ランキング</strong>では、シーズン中（3〜11月）は
-    <strong>1か月「4試合以上」出場していること</strong>
+    <strong>1か月「4試合以上」していること</strong>
     が規定条件となります。
     <br />
     （12〜2月はシーズン外のため、規定試合数は設定されません。）
