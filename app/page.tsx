@@ -89,7 +89,7 @@ export default function Home() {
             <span className="font-medium">
               今登録すると、
               <span className="underline underline-offset-2 decoration-amber-500">有料機能もまとめて無料で試せます</span>
-              （無料期間が終わっても、自動で有料プランに切り替わることはありません）。
+              （無料期間が終わっても、自動で有料プランに切り替わることはありません。）
             </span>
           </p>
         </section>
