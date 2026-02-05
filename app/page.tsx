@@ -6,7 +6,7 @@ export default function Home() {
       <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col px-4 py-2 sm:px-8 lg:px-12">
 
         {/* Hero セクション */}
-        <section className="mt-6 flex flex-1 flex-col gap-8 sm:mt-8 md:mt-20 md:flex-row md:items-center">
+        <section className="flex flex-1 flex-col gap-8 sm:mt-8 md:flex-row md:items-center">
           <div className="flex-1">
             <p className="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 ring-1 ring-sky-100 dark:bg-sky-900/30 dark:text-sky-200 dark:ring-sky-800/60">
               草野球専用の成績管理アプリ
