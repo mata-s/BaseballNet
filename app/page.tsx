@@ -3,111 +3,25 @@ import Image from "next/image";
 export default function Home() {
   return (
     <div className="min-h-screen bg-zinc-50 font-sans text-zinc-900 dark:bg-black dark:text-zinc-50">
-      <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col px-4 py-10 sm:px-8 lg:px-12">
-
-        {/* キャンペーン告知 */}
-        <section className="mt-2 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-4 text-[13px] font-medium text-amber-900 shadow-sm sm:text-sm dark:border-amber-400/40 dark:bg-amber-900/25 dark:text-amber-50">
-          <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between">
-            <div className="flex-1">
-              <p className="inline-flex items-center gap-1 rounded-full bg-white/70 px-3 py-1 text-[11px] font-semibold text-amber-800 ring-1 ring-amber-200 sm:text-xs dark:bg-amber-900/60 dark:text-amber-50 dark:ring-amber-500/60">
-                🎁 リリース記念キャンペーン
-              </p>
-              <p className="mt-2 text-[13.5px] font-bold sm:text-base">
-                今登録すると、<span className="underline underline-offset-2 decoration-amber-500">8月末まで有料機能が全部無料！！</span>
-              </p>
-              <p className="mt-1">
-                現在、ベースボールネットの
-                <span className="font-medium">個人プラン・チームプランの有料機能を8月末まで無料開放</span>
-                しています。アプリにご登録いただいた方から順次、無料でご利用いただけます。
-              </p>
-              <p className="mt-1">
-                この機会に「無料なら一度試してみたい」「チームで使えるか確認してみたい」という方に向けた期間限定キャンペーンです。
-              </p>
-              <p className="mt-2 text-[11px] font-normal text-amber-800/80 dark:text-amber-100/80">
-                ※ 無料期間終了後に自動で有料プランに切り替わることはありません。<br />
-                ※ 継続利用を希望される場合は、アプリ内からあらためてご購入いただく形になります。
-              </p>
-              <p className="mt-1 text-[11px] font-normal text-amber-800/80 dark:text-amber-100/80">
-                ※ 無料開放の反映は順次行っているため、
-                <span className="font-medium">登録から反映まで数時間〜1日ほどかかる場合があります。</span>
-                あらかじめご了承ください。
-              </p>
-              <p className="mt-2 text-[11px] font-normal text-zinc-600 sm:text-xs dark:text-zinc-300">
-                ※ Android（Google Play）は現在準備中です。メールアドレスを教えていただければ先行してご利用いただけます。
-              </p>
-              <p className="mt-3 text-xs font-semibold text-amber-900 sm:text-sm dark:text-amber-50">
-                ↓ キャンペーンに関するご質問やお問い合わせはこちら
-              </p>
-              <div className="mt-1 flex flex-col gap-2 sm:flex-row sm:items-center sm:gap-4">
-                <p className="text-xs sm:text-sm">
-                  メール:{" "}
-                  <a
-                    href="mailto:support@baseball-net.jp"
-                    className="underline underline-offset-2 decoration-amber-500/80 hover:decoration-amber-600"
-                  >
-                    support@baseball-net.jp
-                  </a>
-                </p>
-
-                <div className="flex items-center gap-3">
-                  <a
-                    href="https://x.com/b_net2026?s=21"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 hover:opacity-90"
-                    title="公式X（B-Net）"
-                  >
-                    <Image
-                      src="/badges/x-logo.png"
-                      alt="X"
-                      width={28}
-                      height={28}
-                    />
-                    <span className="text-[11px] sm:text-xs text-amber-800/80 dark:text-amber-100/80">
-                      X（@b_net2026）
-                    </span>
-                  </a>
-
-                  <a
-                    href="https://www.instagram.com/b_net2026?igsh=YzNnZzl1ZTcybDFl&utm_source=qr"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="flex items-center gap-1 hover:opacity-90"
-                    title="公式Instagram（B-Net）"
-                  >
-                    <Image
-                      src="/badges/Instagram_Glyph_Gradient.svg"
-                      alt="Instagram"
-                      width={28}
-                      height={28}
-                    />
-                    <span className="text-[11px] sm:text-xs text-amber-800/80 dark:text-amber-100/80">
-                      Instagram（@b_net2026）
-                    </span>
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-        </section>
+      <main className="mx-auto flex min-h-screen w-full max-w-5xl flex-col px-4 py-2 sm:px-8 lg:px-12">
 
         {/* Hero セクション */}
         <section className="mt-6 flex flex-1 flex-col gap-8 sm:mt-8 md:mt-20 md:flex-row md:items-center">
           <div className="flex-1">
             <p className="inline-flex items-center rounded-full bg-sky-50 px-3 py-1 text-xs font-medium text-sky-700 ring-1 ring-sky-100 dark:bg-sky-900/30 dark:text-sky-200 dark:ring-sky-800/60">
-              草野球の記録・成績をもっと楽しく
+              草野球専用の成績管理アプリ
             </p>
 
             <h1 className="mt-5 text-3xl font-bold leading-tight tracking-tight sm:text-4xl lg:text-5xl">
-              あなたの野球を、<br className="hidden sm:block" />
-              もう一段楽しく。
+              草野球の成績、<br className="hidden sm:block" />
+              全部このアプリで。
             </h1>
 
             <p className="mt-4 max-w-xl text-sm leading-relaxed text-zinc-600 dark:text-zinc-400 sm:text-base">
               ベースボールネットは、草野球の
               <span className="font-medium">個人成績・チーム成績・ランキング</span>を
-              ひとつにまとめて、かんたんに振り返れるアプリです。試合を重ねるほど「今の自分」「チームの調子」が見えてきて、
-              目標づくりや練習のヒントにもつながります。県内・年齢別のランキングで近い相手と比べながら、野球をもう一段楽しく。
+              まとめて管理できるアプリです。打率や内容を振り返りながら、「今の自分」「チームの調子」がひと目で分かります。
+              県内・年齢別のランキングで近い相手と比べながら、野球をもっと楽しく続けられます。
             </p>
 
             {/* CTA ボタン（ストアバッジ・準備中） */}
@@ -151,8 +65,33 @@ export default function Home() {
                   </span>
                 </div>
               </div>
+              <p className="mt-2 text-[11px] font-normal text-zinc-600 sm:text-xs dark:text-zinc-300">
+                ※ Android（Google Play）は現在準備中です。メールアドレスを教えていただければ先行してご利用いただけます。
+                お問い合わせは{" "}
+                <a
+                  href="mailto:support@baseball-net.jp"
+                  className="underline underline-offset-2 decoration-amber-500/80 hover:decoration-amber-600"
+                >
+                  support@baseball-net.jp
+                </a>
+                まで。
+              </p>
             </div>
           </div>
+        </section>
+
+       {/* キャンペーン告知 */}
+        <section className="mt-2 rounded-2xl border border-amber-200 bg-amber-50 px-4 py-3 text-[13px] text-amber-900 shadow-sm sm:text-sm dark:border-amber-400/40 dark:bg-amber-900/25 dark:text-amber-50">
+          <p className="flex flex-col gap-2 text-[12px] sm:flex-row sm:items-center sm:text-[13px]">
+            <span className="inline-flex w-fit items-center gap-1 rounded-full bg-white/80 px-2.5 py-0.5 text-[11px] font-semibold text-amber-800 ring-1 ring-amber-200 dark:bg-amber-900/60 dark:text-amber-50 dark:ring-amber-500/60">
+              🎁 リリース記念
+            </span>
+            <span className="font-medium">
+              今登録すると、
+              <span className="underline underline-offset-2 decoration-amber-500">有料機能もまとめて無料で試せます</span>
+              （自動で有料プランに切り替わることはありません）。
+            </span>
+          </p>
         </section>
 
         {/* 特長セクション */}
