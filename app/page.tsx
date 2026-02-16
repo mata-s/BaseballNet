@@ -160,7 +160,7 @@ export default function Home() {
                   <p className="mt-1 text-base font-semibold">月額プラン</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xl font-bold">580円</p>
+                  <p className="text-xl font-bold">480円</p>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400">/ 月（税込）</p>
                 </div>
               </div>
@@ -186,7 +186,7 @@ export default function Home() {
                   <p className="mt-1 text-base font-semibold">年額プラン</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xl font-bold">6,000円</p>
+                  <p className="text-xl font-bold">4,980円</p>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400">/ 年（税込）</p>
                 </div>
               </div>
@@ -285,7 +285,7 @@ export default function Home() {
                   <p className="mt-1 text-base font-semibold">ゴールドプラン（月額）</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xl font-bold">1,500円</p>
+                  <p className="text-xl font-bold">1,000円</p>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400">/ 月（税込）</p>
                 </div>
               </div>
@@ -311,7 +311,7 @@ export default function Home() {
                   <p className="mt-1 text-base font-semibold">ゴールドプラン（年額）</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xl font-bold">16,000円</p>
+                  <p className="text-xl font-bold">10,000円</p>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400">/ 年（税込）</p>
                 </div>
               </div>
@@ -334,7 +334,7 @@ export default function Home() {
                   <p className="mt-1 text-base font-semibold">プラチナプラン（月額）</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xl font-bold">1,800円</p>
+                  <p className="text-xl font-bold">1,500円</p>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400">/ 月（税込）</p>
                 </div>
               </div>
@@ -360,7 +360,7 @@ export default function Home() {
                   <p className="mt-1 text-base font-semibold">プラチナプラン（年額）</p>
                 </div>
                 <div className="text-right">
-                  <p className="text-xl font-bold">19,400円</p>
+                  <p className="text-xl font-bold">13,000円</p>
                   <p className="text-xs text-zinc-500 dark:text-zinc-400">/ 年（税込）</p>
                 </div>
               </div>
@@ -428,13 +428,13 @@ export default function Home() {
                   </tr>
                   <tr className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
                     <td className="px-4 py-3">1人あたり（月額・10人計算）</td>
+                    <td className="px-4 py-3">100円</td>
                     <td className="px-4 py-3">150円</td>
-                    <td className="px-4 py-3">180円</td>
                   </tr>
                   <tr className="border-t border-zinc-200 bg-zinc-50 dark:border-zinc-800 dark:bg-zinc-900/40">
                     <td className="px-4 py-3">1人あたり（年額換算・10人計算）</td>
-                    <td className="px-4 py-3">約133円</td>
-                    <td className="px-4 py-3">約162円</td>
+                    <td className="px-4 py-3">約83円</td>
+                    <td className="px-4 py-3">約108円</td>
                   </tr>
                 </tbody>
               </table>
