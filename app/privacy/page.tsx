@@ -132,7 +132,19 @@ export default function PrivacyPage() {
             10. お問い合わせ
           </h2>
           <p className="text-sm text-zinc-700 dark:text-zinc-200">
-            本ポリシーに関するお問い合わせは、本サービス内のお問い合わせ窓口よりご連絡ください。
+            本ポリシーに関するお問い合わせは、以下の連絡先までお願いいたします。
+          </p>
+          <p className="text-sm text-zinc-700 dark:text-zinc-200">
+            運営者：ベースボールネット運営
+          </p>
+          <p className="text-sm text-zinc-700 dark:text-zinc-200">
+            メールアドレス：
+            <a
+              href="mailto:support@baseball-net.jp"
+              className="underline text-blue-600 dark:text-blue-400"
+            >
+              support@baseball-net.jp
+            </a>
           </p>
         </section>
       </div>
