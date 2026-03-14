@@ -27,7 +27,7 @@ export default function Home() {
             {/* CTA ボタン（ストアバッジ・準備中） */}
             <div className="mt-6">
               <p className="text-xs font-medium text-zinc-700 dark:text-zinc-200">
-                iOS版 公開中 / Android版 近日公開
+                iOS版 / Android版 公開中
               </p>
 
               {/* SP: 縦並び / sm〜: 横並び */}
@@ -49,32 +49,30 @@ export default function Home() {
                 </a>
 
                 {/* Google Play */}
-                <div
-                  className="flex items-center gap-3 opacity-70 cursor-not-allowed select-none"
-                  aria-disabled="true"
+                <a
+                  href="https://play.google.com/store/apps/details?id=com.baseballnet.bnet"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="flex items-center gap-3 hover:opacity-90 transition-opacity"
                 >
                   <Image
                     src="/badges/google-play-badge.svg"
-                    alt="Google Play（準備中）"
+                    alt="Google Play で手に入れよう"
                     width={160}
                     height={48}
                     priority
                   />
-                  <span className="text-xs text-zinc-500 dark:text-zinc-400">
-                    Google Play（準備中）
-                  </span>
-                </div>
+                </a>
               </div>
               <p className="mt-2 text-[11px] font-normal text-zinc-600 sm:text-xs dark:text-zinc-300">
-                ※ Android（Google Play）は現在準備中です。メールアドレスを教えていただければ先行してご利用いただけます。
-                お問い合わせは{" "}
+                ご不明点は{" "}
                 <a
                   href="mailto:support@baseball-net.jp"
                   className="underline underline-offset-2 decoration-amber-500/80 hover:decoration-amber-600"
                 >
                   support@baseball-net.jp
                 </a>
-                まで。
+                までお問い合わせください。
               </p>
             </div>
           </div>
